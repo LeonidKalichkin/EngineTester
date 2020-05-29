@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -139,15 +139,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="EngineTester.cpp" />
+    <ClCompile Include="source\EngineTester.cpp" />
     <ClCompile Include="source\engine\Engine.cpp" />
     <ClCompile Include="source\engine\InternalCombustionEngine.cpp" />
-    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="source\environment\Environment.cpp" />
+    <ClCompile Include="source\testbed\OverheatTestbed.cpp" />
+    <ClCompile Include="source\testbed\Testbed.cpp" />
+    <ClCompile Include="source\util\Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="source\EngineTester.h" />
     <ClInclude Include="source\engine\Engine.h" />
     <ClInclude Include="source\engine\InternalCombustionEngine.h" />
-    <ClInclude Include="source\test\Test.h" />
+    <ClInclude Include="source\environment\Environment.h" />
+    <ClInclude Include="source\testbed\OverheatTestbed.h" />
+    <ClInclude Include="source\testbed\Testbed.h" />
+    <ClInclude Include="source\util\Utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
